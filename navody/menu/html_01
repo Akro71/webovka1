@@ -1,0 +1,125 @@
+<head>
+    <link rel="shortcut icon" href="cat.ico" type="image/x-icon">
+    <title>Web K&T</title>
+    <style>
+    #textodkazy{
+      color: cadetblue;
+      text-decoration: none;
+
+
+
+    }
+    #pismoramecku{
+      color: white;
+      font-family: Verdana;
+      padding-left: 3vw;
+      }
+    #dolniramecek{
+      background-color: #444;
+      height: auto;
+      width: 100%;
+      }
+    #obrazeka{
+        width: 3vw;
+        height: 3vw;
+      }
+    code {
+        padding-left: 2%;
+        color: #444;
+    }
+    #uka{
+        padding-left: 2%;
+    }    
+    span {
+        user-select: none;
+        color: #888;
+      }  
+    </style>
+</head> 
+<body style='margin-top:0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;'>
+    <style>
+      
+  
+          .dropbtn {
+            background-color: #555;
+            color: white;
+            padding: 2vh;
+            font-size: 16px;
+            border: none;
+            min-width: 10vw;
+            border:0.2vw solid white;
+            border-radius:2.5vh;
+            margin:1vh;
+          }
+          
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            min-width: 11vw;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            padding-right:1px;
+            text-decoration: none;
+            display: block;
+            font-family:verdana;
+          }
+          
+          .dropdown-content a:hover {background-color: #777;}
+          
+          .dropdown:hover .dropdown-content {display: block;}
+          
+          .dropdown:hover .dropbtn {background-color: #666;}
+    </style>
+        <div id="menu" style='width:100%;background-color:#555;'>
+          
+        <div class="dropdown"style='width:85vw;height:auto;'><h1 onclick="location.href='index'" style='margin-left:2vw;color:white;font-family:verdana;'><img src='a.jpg' id='obrazeka'>&nbsp;Web K&T</h1></div>
+        <div class="dropdown">
+          <button class="dropbtn" style='font-family:verdana;font-weight:bold;'>Menu</button>
+          <div class="dropdown-content">
+            <a style='color:white; font-family:verdana;'href="Návody">Úvod</a>
+            <a style='color:white; font-family:verdana; border-top:0.5vh solid silver;'href="Klávesové zkratky">Klávesové zkratky</a>
+            <a style='color:white; font-family:verdana; border-top:0.5vh solid silver;'href="Odkazy">Odkazy</a>
+          
+          </div>
+        </div>
+        </div>
+        
+        <div style='border-bottom: 0.3vh solid #888;'>    
+            <h1 style='font-family: verdana;padding-left:6vw; color:#555;'><u>HTML & CSS</u></h1>
+        </div>
+        <div style='border-left: 0.2vw solid #888 ;border-right: 0.2vw solid #888;margin-left: 20vw;margin-right: 20vw;'>
+            <br>
+            <h2 style='margin-left: 2vw;font-family: Verdana;color:#888;font-weight: bold;'>1. Textový editor</h2>
+            <br>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'> V této kapitole se dozvíme jak pracovat s Visual Studio Code, ve kterém bude začínat programování naší webové stránky. Dozvíme se jak si tento editor nainstalovat a jak s ním pracovat.</p><br>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'> Prvním krokem je si Visual Studio Code nainstalovat. Není to nic složitého a jedná se o klasické stažení aplikace. V našem 'menu' máte podstránku <a id='textodkazy' href=http://webkat.ga/odkazy>"Odkazy"</a> ve které u prvního odkazu klikněte na dowload. Ihned (podle rychlosti vašeho internetu) vás tento odkaz přesměruje na oficiální stránky Visual Studio Code kde stačí kliknout na modré tlačítko 'download' (pokud máte jiný operační systém než Windows klikněte na šipečku vedle tlačítka 'download'). Soubor by se vám měl pak klasicky stáhnout do počítače. <a style='font-weight: bold;'>:</a>)</p>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'> Poté co bude ve vašem počítači Visual Studio Code připraven ke spuštění následujte další řádky. Editor si můžete spustit a na domovské stránce Visual Studio Code najděte bílý nápis Start a pod ním položku New File. Když na odkaz New File kliknete, zobrazí se vám nová stránka s řádkem 1 na které můžete začít pracovat. Poté co budete mít svojí práci dokončenou, stačí zmáčknout klávesovou zkratku Ctrl+S a soubor se vám uloží podle toho kam si ho vy chcete uložit. Doporučujeme si soubory ukládat do jedné složky. Doporučujeme také si soubor uložit již předtím než na něm začnete pracovat a ukládat s příponou .html   <a style='font-weight: bold;'></a></p>
+            
+            <br>
+            <br>
+            <center>
+              
+              <button onclick='location.href="navody/menu"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.2vw solid #555;'>Menu</button>
+              <button onclick='location.href="navody/menu/html_02"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.15vw solid orange'>Next ></button>
+            </center>
+            <br><br>
+        </div>
+
+        <div id='dolniramecek'>
+            <br>
+            <p id='pismoramecku'>Kontakt: +420 111 111 111</p>
+            <p id='pismoramecku'>E-mail: webkat@email.cz</p>
+            <br>
+        </div>
+</body>        
