@@ -1,0 +1,151 @@
+<head>
+    <link rel="shortcut icon" href="cat.ico" type="image/x-icon">
+    <title>Web K&T</title>
+    <style>
+    #pismoramecku{
+      color: white;
+      font-family: Verdana;
+      padding-left: 3vw;
+      }
+    #dolniramecek{
+      background-color: #444;
+      height: auto;
+      width: 100%;
+      }
+    #obrazeka{
+        width: 3vw;
+        height: 3vw;
+      }
+    code {
+        padding-left: 2%;
+        color: #444;
+    }
+    #uka{
+        padding-left: 2%;
+    }    
+    span {
+        user-select: none;
+        color: #888;
+      }  
+    </style>
+</head> 
+<body style='margin-top:0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;'>
+    <style>
+      
+  
+          .dropbtn {
+            background-color: #555;
+            color: white;
+            padding: 2vh;
+            font-size: 16px;
+            border: none;
+            min-width: 10vw;
+            border:0.2vw solid white;
+            border-radius:2.5vh;
+            margin:1vh;
+          }
+          
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            min-width: 11vw;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            padding-right:1px;
+            text-decoration: none;
+            display: block;
+            font-family:verdana;
+          }
+          
+          .dropdown-content a:hover {background-color: #777;}
+          
+          .dropdown:hover .dropdown-content {display: block;}
+          
+          .dropdown:hover .dropbtn {background-color: #666;}
+    </style>
+        <div id="menu" style='width:100%;background-color:#555;'>
+          
+        <div class="dropdown"style='width:85vw;height:auto;'><h1 onclick="location.href='index'" style='margin-left:2vw;color:white;font-family:verdana;'><img src='a.jpg' id='obrazeka'>&nbsp;Web K&T</h1></div>
+        <div class="dropdown">
+          <button class="dropbtn" style='font-family:verdana;font-weight:bold;'>Menu</button>
+          <div class="dropdown-content">
+            <a style='color:white; font-family:verdana;'href="Návody">Úvod</a>
+            <a style='color:white; font-family:verdana; border-top:0.5vh solid silver;'href="Klávesové zkratky">Klávesové zkratky</a>
+            <a style='color:white; font-family:verdana; border-top:0.5vh solid silver;'href="Odkazy">Odkazy</a>
+          
+          </div>
+        </div>
+        </div>
+        
+        <div style='border-bottom: 0.3vh solid #888;'>    
+            <h1 style='font-family: verdana;padding-left:6vw; color:#555;'><u>HTML & CSS</u></h1>
+        </div>
+        <div style='border-left: 0.2vw solid #888 ;border-right: 0.2vw solid #888;margin-left: 20vw;margin-right: 20vw;'>
+            <br>
+            <h2 style='margin-left: 2vw;font-family: Verdana;color:#888;font-weight: bold;'>2. První kód</h2>
+            <br>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>V minulé kapitole jsme si vystvětlili jak používat Visual Studio. A teď si v něm napíšeme první kód. Vytvořte si v levém horním rohu nový soubor ->File->New File a uložte si ho někde kam se k němu snadno dostanete, například na plochu. Pozor!! Uložte ho jako .html tedy nějak takto: mujnazev.html .</p><br>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'> Tak a teď už můžeme začít doopravdy programovat <a style='font-weight: bold;'>:</a>)</p>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'> Do vašeho .html souboru zkuste napsat následující kód<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <code><span>1 </span><<a>body</a>></code><br>
+                <code><span>2 </span>&nbsp;&nbsp;&nbsp;&nbsp;<<a>p</a>>Hello world!<<a>/p</a>></code><br>
+                <code><span>3 </span><<a>/body</a>></code>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Teď běžte do složky kam jste si soubor uložili, například na Plochu a dvojklikem ho spusťte. Měl by se vám otevřít ve vašem webovém prohlížeči (Chrome,Edge atd.), a mněli by jste vydět něco takového<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <p id='uka'>Hello world!</p>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Gratulujeme! Právě jste vytvořili svůj první HTML kód! Jak jste si nejspíše všilmi, to co dáme mezi < p> a <<a>/p</a>> se nám napíše. Můžete zkusit text změnit třeba na Ahoj, a napíše nám to Ahoj. < p> a <<a>/p</a>> totiž opravdu v HTML slouží k psaní textů. Teď zkusíme udělat odkaz na jinou stránku. Zkuste pod < p> Hello world <<a>/p</a>> doplnit toto<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <code><span>3 </span>&nbsp;&nbsp;&nbsp;&nbsp;<<a>a href="http://attaweb.tk"</a>>Odkaz na Attaweb.tk<<a>/a</a>></code><br>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>A po znovunačtení stránky (Ctrl + R) by jste mněli vidět toto. Zkuste kliknout na odkaz, přesměruje vás to na cvičné stránky attaweb.tk.</p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <p id='uka'>Hello world!</p>
+                <a id='uka'href="http://attaweb.tk"> Odkaz na Attaweb.tk</a>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Super! Už umíte udělat vlastní nápis a odkaz! Na závěr zkusíme ještě tlačítko. Zase si do vašeho programu ve Visual Studiu opište následující kód. Zase si ho dejte pod < p>.</p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <code><span>3 </span>&nbsp;&nbsp;&nbsp;&nbsp;<<a>button</a>>Tlačítko 1<<a>/button</a>></code><br>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Výsledek<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <p id='uka'>Hello world!</p>
+                <button id='uka'>Tlačítko 1</button><br>
+                <a id='uka' href="http://attaweb.tk"> Odkaz na Attaweb.tk</a>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Takže už umíte i tlačítko. Jak ho udělat funkční si ukážeme později. V následující kapitole si ukážeme jak náš kód zlepšit o barvu,styl a velikost pomocí CSS.</p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <p id='uka' style='font-family: Verdana;color: #444;'>Hello world!</p>
+                <button id='uka' style='background-color: steelblue;color:white;border-radius: 2vh;border: 0.4vw solid  orange;margin-left: 1vw;height: 10vh;'>Tlačítko 1</button><br>
+                <a id='uka' href="http://attaweb.tk" style='color: gray;font-family: Verdana; font-weight: bold;'> Odkaz na Attaweb.tk</a>
+            </div>
+            <br>
+            <br>
+            <center>
+              <button onclick='location.href="navody/menu/html_01"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.15vw solid orange;'>< Back</button>
+              <button onclick='location.href="navody/menu"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.2vw solid #555;'>Menu</button>
+              <button onclick='location.href="navody/menu/html_03"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.15vw solid orange'>Next ></button>
+            </center>
+            <br><br>
+        </div>
+
+        <div id='dolniramecek'>
+            <br>
+            <p id='pismoramecku'>Kontakt: +420 111 111 111</p>
+            <p id='pismoramecku'>E-mail: webkat@email.cz</p>
+            <br>
+        </div>
+</body>        
