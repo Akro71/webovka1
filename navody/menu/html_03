@@ -1,0 +1,204 @@
+<head>
+    <link rel="shortcut icon" href="cat.ico" type="image/x-icon">
+    <title>Web K&T</title>
+    <style>
+    #pismoramecku{
+      color: white;
+      font-family: Verdana;
+      padding-left: 3vw;
+      }
+    #dolniramecek{
+      background-color: #444;
+      height: auto;
+      width: 100%;
+      }
+    #obrazeka{
+        width: 3vw;
+        height: 3vw;
+      }
+    code {
+        padding-left: 2%;
+        color: #444;
+    }
+    #uka{
+        padding-left: 2%;
+    }    
+    span {
+        user-select: none;
+        color: #888;
+      }  
+    </style>
+</head> 
+<body style='margin-top:0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;'>
+    <style>
+      
+  
+          .dropbtn {
+            background-color: #555;
+            color: white;
+            padding: 2vh;
+            font-size: 16px;
+            border: none;
+            min-width: 10vw;
+            border:0.2vw solid white;
+            border-radius:2.5vh;
+            margin:1vh;
+          }
+          
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            min-width: 11vw;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            padding-right:1px;
+            text-decoration: none;
+            display: block;
+            font-family:verdana;
+          }
+          
+          .dropdown-content a:hover {background-color: #777;}
+          
+          .dropdown:hover .dropdown-content {display: block;}
+          
+          .dropdown:hover .dropbtn {background-color: #666;}
+    </style>
+        <div id="menu" style='width:100%;background-color:#555;'>
+          
+        <div class="dropdown"style='width:85vw;height:auto;'><h1 onclick="location.href='index'" style='margin-left:2vw;color:white;font-family:verdana;'><img src='a.jpg' id='obrazeka'>&nbsp;Web K&T</h1></div>
+        <div class="dropdown">
+          <button class="dropbtn" style='font-family:verdana;font-weight:bold;'>Menu</button>
+          <div class="dropdown-content">
+            <a style='color:white; font-family:verdana;'href="Návody">Úvod</a>
+            <a style='color:white; font-family:verdana; border-top:0.5vh solid silver;'href="Klávesové zkratky">Klávesové zkratky</a>
+            <a style='color:white; font-family:verdana; border-top:0.5vh solid silver;'href="Odkazy">Odkazy</a>
+          
+          </div>
+        </div>
+        </div>
+        
+        <div style='border-bottom: 0.3vh solid #888;'>    
+            <h1 style='font-family: verdana;padding-left:6vw; color:#555;'><u>HTML & CSS</u></h1>
+        </div>
+        <div style='border-left: 0.2vw solid #888 ;border-right: 0.2vw solid #888;margin-left: 20vw;margin-right: 20vw;'>
+            <br>
+            <h2 style='margin-left: 2vw;font-family: Verdana;color:#888;font-weight: bold;'>3. Úvod do CSS</h2>
+            <br>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>V minulé kapitole jsme si vystvětlili jak udělat nápis, odkaz a tlačítko. Teď si vysvětlíme jak do našeho kódu zakomponovat Cascading Style Sheets-CSS. Budeme pracovat s kódem z minulé stránky. Otevřte ho ve Visual Studiu. Pokud jste nic neměnili, uvidíte toto.</p><br>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <code><span>1 </span><<a>body</a>></code><br>
+                <code><span>2 </span>&nbsp;&nbsp;&nbsp;&nbsp;<<a>p</a>>Hello world!<<a>/p</a>></code><br>
+                <code><span>3 </span>&nbsp;&nbsp;&nbsp;&nbsp;<<a>button</a>>Tlačítko 1<<a>/button</a>></code><br>
+                <code><span>4 </span>&nbsp;&nbsp;&nbsp;&nbsp;<<a>a href="http://attaweb.tk"</a>>Odkaz na Attaweb.tk<<a>/a</a>></code><br>
+                <code><span>5 </span><<a>/body</a>></code>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Teď na řádek 1,2,3,4 a 5 doplňte následující kód (Včetně jednoho prázdného řádku)<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <code><span>1 </span><<a>head</a>></code><br>
+                <code><span>2 </span><<a>style</a>></code><br>
+                <code><span>3 </span></code><br>
+                <code><span>4 </span><<a>/style</a>></code><br>
+                <code><span>5 </span><<a>/head</a>></code><br>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Na řádek 7, kde by jste měli mít (je to ale jedno na jakém řádku to máte) váš nápis v < p > dopište toto<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+
+                <code><span>7 </span>&nbsp;&nbsp;&nbsp;&nbsp;<<a>p</a> id="napis001">Hello world!<<a>/p</a>></code><br>
+
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Jak vidíte, doplnili jsme si do <> id. Id je takové jméno, toho prvku (musí být v uvozovkách). Takže pro chrome se náš nápis Hello world bude jmenovat napis001. Id jde používat ve všech elementech, v tlačítkách, nadpisech i odkazech. Stačí udělat mezeru a id. A teď k hlavnímu účelu id. Když teď doplníte na řádek 3 až 5 toto, naše písmo se změní na zelenou. Pozor! I když se vaše id jmenuje třeba ikl, v tom takzvaném style (řádek 2 až 6), se bude jmenovat #ikl, vždy tam ten # musí být.  </p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <code><span>1 </span><<a>head</a>></code><br>
+              <code><span>2 </span><<a>style</a>></code><br>
+              <code><span>3 </span>&nbsp;&nbsp;#napis001 {</code><br>
+              <code><span>4 </span>&nbsp;&nbsp;&nbsp;&nbsp;color: green;</code><br>
+              <code><span>5 </span>&nbsp;&nbsp;}</code><br>  
+              <code><span>6 </span><<a>/style</a>></code><br>
+              <code><span>7 </span><<a>/head</a>></code><br>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Výsledek<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <style>
+                  #napis001{
+                    color:green;
+                    padding-left: 2%;
+                  }
+                </style>
+              
+                <p id='napis001'>Hello world!</p>
+                <button id='uka'>Tlačítko 1</button><br>
+                <a id='uka' href="http://attaweb.tk"> Odkaz na Attaweb.tk</a>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Tak teď zkuste změnit barvu písma v tlačítku. Níže máte celý náš kód za poslední tři lekce, včetně řešení.</p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <code><span>1 </span><<a>head</a>></code><br>
+              <code><span>2 </span><<a>style</a>></code><br>
+              <code><span>3 </span>&nbsp;&nbsp;#napis001 {</code><br>
+              <code><span>4 </span>&nbsp;&nbsp;&nbsp;&nbsp;color: green;</code><br>
+              <code><span>5 </span>&nbsp;&nbsp;}</code><br>
+              <code><span>6 </span>&nbsp;&nbsp;#Tlacitko01 {</code><br>
+              <code><span>7 </span>&nbsp;&nbsp;&nbsp;&nbsp;color: red;</code><br>
+              <code><span>8 </span>&nbsp;&nbsp;}</code><br>  
+              <code><span>9 </span><<a>/style</a>></code><br>
+              <code><span>10</span><<a>/head</a>></code><br>
+              <code><span>11</span><<a>body</a>></code><br>
+              <code><span>12</span>&nbsp;&nbsp;&nbsp;&nbsp;<<a>p id="napis001"</a>>Hello world!<<a>/p</a>></code><br>
+              <code><span>13</span>&nbsp;&nbsp;&nbsp;&nbsp;<<a>button id="Tlacitko01"</a>>Tlačítko 1<<a>/button</a>></code><br>
+              <code><span>14</span>&nbsp;&nbsp;&nbsp;&nbsp;<<a>a href="http://attaweb.tk"</a>>Odkaz na Attaweb.tk<<a>/a</a>></code><br>
+              <code><span>15</span><<a>/body</a>></code>
+
+            </div>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <style>
+                  #napis001 {
+                    color: green;
+                  }
+                  #Tlacitko01 {
+                    color: red;
+                  }
+                </style>
+
+                    <p id="napis001">Hello world!</p>
+                    <button id="Tlacitko01">Tlačítko 1</button><br>
+                    <a href="http://attaweb.tk" style='margin-left: 1vw;'>Odkaz na Attaweb.tk</a>
+              
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Zkuste dát změnit i barvu odkazu. Takže dnes jsme si vysvětlili základy použití CSS v HTML. Zopakujeme si to. Element který chceme upravit pomocí id nějak nazveme. Nahoře v kódu v <<a>style</a>> ho upravíme pomocí #vasnazev a {}. To je vše! místo color<a style='font-weight: bold;'>:</a><a style='font-weight: bold;'>;</a> zkuste background-color<a style='font-weight: bold;'>:</a> green<a style='font-weight: bold;'>;</a> a uvidíte co se stane. a můžete i kombinovat jak vidíte níže <a style='font-weight: bold;'>:</a>)</p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <code><span>0 </span><<a>style</a>></code><br>
+              <code><span>0 </span>&nbsp;&nbsp;#Tlacitko01 {</code><br>
+              <code><span>0 </span>&nbsp;&nbsp;&nbsp;&nbsp;color: white;</code><br>
+              <code><span>0 </span>&nbsp;&nbsp;&nbsp;&nbsp;background-color: steelblue;</code><br>
+              <code><span>0 </span>&nbsp;&nbsp;}</code><br>
+              <code><span>0 </span><<a>/style</a>></code><br>
+              <code><span>0 </span><<a>button id="Tlacitko01"</a>>Tlačítko 1<<a>/button</a>></code><br>
+            </div>
+            <br>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>V příští lekci začneme vytvářet vlastní web.</p>
+            <br>
+            <center>
+            <button onclick='location.href="navody/menu/html_02"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.15vw solid orange;'>< Back</button>
+            <button onclick='location.href="navody/menu"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.2vw solid #555;'>Menu</button>
+            <button onclick='location.href="navody/menu/html_04"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.15vw solid orange'>Next ></button>
+            </center>
+            <br><br>
+        </div>
+
+        <div id='dolniramecek'>
+            <br>
+            <p id='pismoramecku'>Kontakt: +420 111 111 111</p>
+            <p id='pismoramecku'>E-mail: webkat@email.cz</p>
+            <br>
+        </div>
+</body>        
