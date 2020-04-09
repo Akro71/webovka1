@@ -1,0 +1,343 @@
+<head>
+    <link rel="shortcut icon" href="cat.ico" type="image/x-icon">
+    <title>Web K&T</title>
+    <style>
+    #pismoramecku{
+      color: white;
+      font-family: Verdana;
+      padding-left: 3vw;
+      }
+    #dolniramecek{
+      background-color: #444;
+      height: auto;
+      width: 100%;
+      }
+    #obrazeka{
+        width: 3vw;
+        height: 3vw;
+      }
+    code {
+        padding-left: 2%;
+        color: #444;
+    }
+    #uka{
+        padding-left: 2%;
+    }    
+    span {
+        user-select: none;
+        color: #888;
+      }  
+    </style>
+</head> 
+<body style='margin-top:0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;'>
+    <style>
+      
+  
+          .dropbtn {
+            background-color: #555;
+            color: white;
+            padding: 2vh;
+            font-size: 16px;
+            border: none;
+            min-width: 10vw;
+            border:0.2vw solid white;
+            border-radius:2.5vh;
+            margin:1vh;
+          }
+          
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            min-width: 11vw;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            padding-right:1px;
+            text-decoration: none;
+            display: block;
+            font-family:verdana;
+          }
+          
+          .dropdown-content a:hover {background-color: #777;}
+          
+          .dropdown:hover .dropdown-content {display: block;}
+          
+          .dropdown:hover .dropbtn {background-color: #666;}
+    </style>
+        <div id="menu" style='width:100%;background-color:#555;'>
+          
+        <div class="dropdown"style='width:85vw;height:auto;'><h1 onclick="location.href='index'" style='margin-left:2vw;color:white;font-family:verdana;'><img src='a.jpg' id='obrazeka'>&nbsp;Web K&T</h1></div>
+        <div class="dropdown">
+          <button class="dropbtn" style='font-family:verdana;font-weight:bold;'>Menu</button>
+          <div class="dropdown-content">
+            <a style='color:white; font-family:verdana;'href="http://webkat.ga/">Úvod</a>
+            <a style='color:white; font-family:verdana; border-top:0.5vh solid silver;'href="http://webkat.ga/klavesovezkratky">Klávesové zkratky</a>
+            <a style='color:white; font-family:verdana; border-top:0.5vh solid silver;'href="http://webkat.ga/odkazy">Odkazy</a>
+          
+          </div>
+        </div>
+        </div>
+        
+        <div style='border-bottom: 0.3vh solid #888;'>    
+            <h1 style='font-family: verdana;padding-left:6vw; color:#555;'><u>HTML & CSS</u></h1>
+        </div>
+        <div style='border-left: 0.2vw solid #888 ;border-right: 0.2vw solid #888;margin-left: 20vw;margin-right: 20vw;'>
+            <br>
+            <h2 style='margin-left: 2vw;font-family: Verdana;color:#888;font-weight: bold;'>4. První Web</h2>
+            <br>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Tak už umíte základy HTML a CSS. V následujících kapitolách na bázi HTML vytvoříme cvičnou stránku o nás, o Web K&T, kdo jsme, co děláme atd. Zkrátka si vytvoříme jednoduchou firemní/propagační web. Ve Visual studiu si vytvořte nový soubor a zase si ho uložte (jak nazev<a style='font-weight: bold;'>.</a>html) někam kde se k němu rychle dostanene. Do souboru si přepište kód níže, a pak si ho po řádcích vysvětlíme.</p><br>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+                <code><span>1 </span><<a>head</a>></code><br>
+                <code><span>2 </span>&nbsp;&nbsp;<<a>style</a>></code><br>
+                <code><span>3 </span>&nbsp;&nbsp;&nbsp;&nbsp;#Nadpis1 {</code><br>
+                <code><span>4 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #555;</code><br>
+                <code><span>5 </span>&nbsp;&nbsp;&nbsp;&nbsp;}<code><br>
+                <code><span>6 </span>&nbsp;&nbsp;<<a>/style</a>></code><br>
+                <code><span>7 </span><<a>/head</a>></code>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Takže začneme prvním řádkem. Je tam Head. Ten pokračuje až na řádek sedm. Vše mezi tím (2-6) je takzvaně v Headu, v hlavičce. Head slouží v prohlížečích k tomu, že ho načtou přednostně. Dává se tam většinou Style a potom nějaké doplňky jako ikonka a nápis karty. A teď k tomu Style. Funguje podobně jako Head, vše co je mezi prvním style(řádek 2) a druhým(řádek 6) má nějakou specíální úlohu. U style to je že do něj můžeme psát v CSS což je třeba id z minulé kapitoly. V parametrech id si můžeme hrát s parametry objektů jako jsou barva, velikost či styl písma. Jak vidíte v parametru color, máme tam #555, což je tmavě šedá. Pokud si barvy chcete vyhledat, jmenuje se to hex. Teď si vysvětlíme co je center,body a h1<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <code><span>1 </span>&nbsp;<<a>head</a>></code><br>
+              <code><span>2 </span>&nbsp;<<a>style</a>></code><br>
+              <code><span>3 </span>&nbsp;&nbsp;&nbsp;#Nadpis1 {</code><br>
+              <code><span>4 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #555;</code><br>
+              <code><span>5 </span>&nbsp;&nbsp;&nbsp;}</code><br>  
+              <code><span>6 </span>&nbsp;<<a>/style</a>></code><br>
+              <code><span>7 </span>&nbsp;<<a>/head</a>></code><br>
+              <code><span>8 </span>&nbsp;<<a>body</a>></code><br>
+              <code><span>9 </span>&nbsp;&nbsp;&nbsp;<<a>center</a>></code><br>
+              <code><span>10</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>h1 id="Nadpis1"</a>>Web K&T<<a>/h1</a>></code><br>
+              <code><span>11</span>&nbsp;&nbsp;&nbsp;<<a>/center</a>></code><br>
+              <code><span>12</span>&nbsp;<<a>/body</a>></code><br>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>K čemu je body je trošku kontroverzní, každopádně tím nic nezkazíte a vyhnete se zbytečným errorům. Center také jako předešlé tagy začíná na jednom řádku a končí na jiném s tím, že v sobě má zase část kódu. Vše co je v něm, bude zarovnáno veprostřed (HTML klasicky začíná zleva). A co se tíče h1, to je nadpis. Tag p slouží k delším textům jako je tento. Ale h se používá na větší nadpisy. Číslo může mít od jedné do šesti, jedna je největší a šest je menší než klasický p tag. Zkuste sami jedničku nahradit jiným číslem. A teď výsledek toho co jsme zatím naprogramovali<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <style>
+                #Nadpis1 {
+                  color: #555;
+                  font-family: 'Times New Roman';
+                }
+              </style>
+                <center>
+                  <h1 id="Nadpis1">Web K&T</h1>
+                </center>
+          </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>H1 si dáme do rámečku. Ten se dělá v html tagem div. A zas k němu doplníme id, které si pod # dáme do Style. A v id Nadpis1 přidáme font-family, což určuje vzhled písma<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <code><span>1 </span>&nbsp;<<a>head</a>></code><br>
+              <code><span>2 </span>&nbsp;<<a>style</a>></code><br>
+              <code><span>3 </span>&nbsp;&nbsp;&nbsp;#Nadpis1 {</code><br>
+              <code><span>4 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #555;</code><br>
+              <code><span>5 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family: Verdana;</code><br>
+              <code><span>6 </span>&nbsp;&nbsp;&nbsp;}</code><br>  
+              <code><span>7 </span>&nbsp;&nbsp;&nbsp;#Ramecek {</code><br>
+              <code><span>8 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: gold;</code><br>
+              <code><span>9 </span>&nbsp;&nbsp;&nbsp;}</code><br> 
+              <code><span>10</span>&nbsp;<<a>/style</a>></code><br>
+              <code><span>11</span>&nbsp;<<a>/head</a>></code><br>
+              <code><span>12</span>&nbsp;<<a>body</a>></code><br>
+              <code><span>13</span>&nbsp;&nbsp;&nbsp;<<a>center</a>></code><br>
+              <code><span>14</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>div id="Ramecek"</a>></code><br>
+              <code><span>15</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>h1 id="Nadpis1"</a>>Web K&T<<a>/h1</a>></code><br>
+              <code><span>16</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>/div</a>></code><br>
+              <code><span>17</span>&nbsp;&nbsp;&nbsp;<<a>/center</a>></code><br>
+              <code><span>18</span>&nbsp;<<a>/body</a>></code><br>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Výsledek<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0vh;padding-bottom:0vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+            <style>
+                #Nadpis777 {
+                  color: #555;
+                  font-family: Verdana;
+                }
+                #Ramecek {
+                  background-color: gold;
+                }
+                #Text1 {
+                  font-family: 'Times New Roman';
+
+                }
+            </style>
+            <center>
+              <div id="Ramecek">
+                <h1 id="Nadpis777">Web K&T</h1>
+             </div>
+            </center>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Tím se pozadí změnilo na zlatou. Super co? Teď bude mít zlaté pozadí vše co bude "v" tom divu. Zkuste tam přidat třeba p a nějaký text. Což uděláme. ale ještě předtím si ukážeme co je br. Tag <a style='font-weight: bold;'><</a>br<a style='font-weight: bold;'>></a> nám udělá jednu mezeru. Asi jako když zmáčknete Enter. A my ten text nechceme mít přilepený na nadpis, takže tam tak dva/tři použijeme. Rovnou doplníme text<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <code><span>1 </span>&nbsp;<<a>head</a>></code><br>
+              <code><span>2 </span>&nbsp;<<a>style</a>></code><br>
+              <code><span>3 </span>&nbsp;&nbsp;&nbsp;#Nadpis1 {</code><br>
+              <code><span>4 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #555;</code><br>
+              <code><span>5 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family: Verdana;</code><br>
+              <code><span>6 </span>&nbsp;&nbsp;&nbsp;}</code><br>  
+              <code><span>7 </span>&nbsp;&nbsp;&nbsp;#Ramecek {</code><br>
+              <code><span>8 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: gold;</code><br>
+              <code><span>9 </span>&nbsp;&nbsp;&nbsp;}</code><br> 
+              <code><span>10</span>&nbsp;<<a>/style</a>></code><br>
+              <code><span>11</span>&nbsp;<<a>/head</a>></code><br>
+              <code><span>12</span>&nbsp;<<a>body</a>></code><br>
+              <code><span>13</span>&nbsp;&nbsp;&nbsp;<<a>center</a>></code><br>
+              <code><span>14</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>div id="Ramecek"</a>></code><br>
+              <code><span>15</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>h1 id="Nadpis1"</a>>Web K&T<<a>/h1</a>></code><br>
+              <code><span>16</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>br</a>></code><br>
+              <code><span>17</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>br</a>></code><br>
+              <code><span>18</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>br</a>></code><br>
+              <code><span>19</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>p id="Text1"</a>>Jsme parta nadšenců atd.<<a>/p</a>></code><br>
+              <code><span>20</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>/div</a>></code><br>
+              <code><span>21</span>&nbsp;&nbsp;&nbsp;<<a>/center</a>></code><br>
+              <code><span>22</span>&nbsp;<<a>/body</a>></code><br>
+
+            </div>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              
+            <center>
+                <div id="Ramecek">
+                <h1 id="Nadpis1">Web K&T</h1>
+                <br>
+                <br>
+                <br>
+                <p id="Text1">Jsme parta nadšenců atd.</p>
+              </div>
+            </center>
+
+              
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Ten text není moc hezký, ale my jsme si u něj rovnou udělali id, takže v style ho můžeme s pomocí font-family hned změnint, a dáme si ho do samostatného divu s jiným pozadím. A ten nadpis posuneme pomocí br dál odshora.<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <code><span>1 </span>&nbsp;<<a>head</a>></code><br>
+              <code><span>2 </span>&nbsp;<<a>style</a>></code><br>
+              <code><span>3 </span>&nbsp;&nbsp;&nbsp;#Nadpis1 {</code><br>
+              <code><span>4 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #555;</code><br>
+              <code><span>5 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family: Verdana;</code><br>
+              <code><span>6 </span>&nbsp;&nbsp;&nbsp;}</code><br>  
+              <code><span>7 </span>&nbsp;&nbsp;&nbsp;#Ramecek {</code><br>
+              <code><span>8 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: gold;</code><br>
+              <code><span>9 </span>&nbsp;&nbsp;&nbsp;}</code><br>
+              <code><span>7 </span>&nbsp;&nbsp;&nbsp;#Text1 {</code><br>
+              <code><span>8 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family: Verdana;</code><br>
+              <code><span>9 </span>&nbsp;&nbsp;&nbsp;}</code><br> 
+              <code><span>10</span>&nbsp;<<a>/style</a>></code><br>
+              <code><span>11</span>&nbsp;<<a>/head</a>></code><br>
+              <code><span>12</span>&nbsp;<<a>body</a>></code><br>
+              <code><span>13</span>&nbsp;&nbsp;&nbsp;<<a>center</a>></code><br>
+              <code><span>14</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>div id="Ramecek"</a>></code><br>
+              <code><span>17</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>br</a>></code><br>
+              <code><span>18</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>br</a>></code><br>
+              <code><span>15</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>h1 id="Nadpis1"</a>>Web K&T<<a>/h1</a>></code><br>
+              <code><span>16</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>br</a>></code><br>
+              <code><span>17</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>br</a>></code><br>
+              <code><span>18</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>br</a>></code><br>
+              <code><span>20</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>/div</a>></code><br>
+              <code><span>20</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>div</a>></code><br>
+              <code><span>19</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>p id="Text1"</a>>Jsme parta nadšenců atd.<<a>/p</a>></code><br>
+              <code><span>20</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<a>/div</a>></code><br>
+              <code><span>21</span>&nbsp;&nbsp;&nbsp;<<a>/center</a>></code><br>
+              <code><span>22</span>&nbsp;<<a>/body</a>></code><br>
+            </div>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <style>
+                #Nadpis1XXX {
+                  color: #555;
+                  font-family: Verdana;
+                }
+                #RamecekX {
+                  background-color: gold;
+                }
+                #Text1X {
+                  font-family: Verdana;
+                }
+              </style>
+                <center>
+                  <div id="RamecekX">
+                    <br>
+                    <br>
+                    <h1 id="Nadpis1XXX">Web K&T</h1>
+                    <br>
+                    <br>
+                    <br>
+                  </div>
+                  <div>
+                    <p id="Text1X">Jsme parta nadšenců atd.</p>
+                  </div>
+                </center>
+            </div>  
+            <br>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Hned lepší co? Místo toho našeho nadpisu a textu si samozřejmě dejte co chcete, třeba něco o vás nebo o webu který tvoříte. Další odstavec přidáte jednosuše pomocí oddělení br a pak novým p tagem. A id můžete nechat pořád stejné plus si do toho id přidejte max-width: XXXpx; aby text nebyl roztažený přes celou obrazovku. Koukneme se jak mezi odstavce (nebo kamkoli jinam) vložit obrázek. Nějaký si stáhněte, ideálně jpg. S png jsou někdy problémy. A uložte si ho do stejné složky kde máte váš HTML kód. A teď na požadované místo obrázek vložíme tímto kódem<a style='font-weight: bold;'>:</a></p>
+            <br>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <code><span>0 </span>&nbsp;<<a>img src='jmenoobrazku.jpg' id="Obrazek"</a>></code><br>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>A do Style přidejte toto. Určuje to výšku s šířku obrázku v pixelech, takže pokud vám čísla nebudou vyhovovat, například obrázek není čtvercový, jednodušše změňte čísla. </p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #d8d8d8;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <code><span>0 </span>&nbsp;#<a></a>Obrazek {</code><br>
+              <code><span>0 </span>&nbsp;width: 300px;</code><br>
+              <code><span>0 </span>&nbsp;height: 300px;</code><br>
+              <code><span>0 </span>&nbsp;}</code><br>
+            </div>
+            <p style='color: black;font-family: Arial; max-width: 50vw; margin-left: 3vw;'>Po této lekci by jste měli být schopni udělat něco takového<a style='font-weight: bold;'>:</a></p>
+            <div style='padding-top:0.5vh;padding-bottom:0.5vh;background-color: #ffffff;border:0.15vw solid #444;width: 60%;height: auto; margin-left: 20%;'>
+              <style>
+                #Nadpis1VV {
+                  color: #555;
+                  font-family: Verdana;
+                  
+                }
+                #RamecekVV {
+                  background-color: gold;
+                }
+                #Text1VV {
+                  font-family: Verdana;
+                  max-width: 20vw;
+                }
+                #ObrazekVV {
+                  width: 12vw;
+                  height: 12vw;
+                }
+              </style>
+                <center>
+                  <div id="RamecekVV">
+                    <br>
+                    <br>
+                    <h1 id="Nadpis1VV">Web K&T</h1>
+                    <br>
+                    <br>
+                    <br>
+                  </div>
+                  <div>
+                    <p id="Text1VV">Odstavec 1 Vytvořeno pomocí p tagu. Mezery jsou vytvořeny br. U obrázku nezapomeňte přidat velikost, jinak se automaticky rotáhne nebo naopak zmenší.</p>
+                    <img src='server.jpg' id="ObrazekVV">
+                    <p id="Text1VV">Odstavec 2 Odtavce si můžete spestřit nadpisem, zkuste třeba šedý h3.</p>
+                
+                    <h3 style='font-family: Verdana; color: #555;'>Nadpis odstavce</h3>
+                    <p id="Text1VV">Pěkný, co? V příští kapitole si víc pohrajeme s parametry CSS u textu. Například tloušťka nebo podtržení.</p>
+                  </div>
+                </center>
+            
+            </div>
+            <br><br>
+            <center>
+              <button onclick='location.href="html_03"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.15vw solid orange;'>< Back</button>
+              <button onclick='location.href="http://webkat.ga/navody/menu"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.2vw solid #555;'>Menu</button>
+              <button onclick='location.href="html_05"' style='background-color: steelblue;color: white;width: auto;height: 5%;border-radius: 2vh;border: 0.15vw solid orange'>Next ></button>
+            </center>
+            <br>
+        </div>
+        <div id='dolniramecek'>
+            <br>
+            <p id='pismoramecku'>Kontakt: +420 111 111 111</p>
+            <p id='pismoramecku'>E-mail: webkat@email.cz</p>
+            <br>
+        </div>
+</body>        
