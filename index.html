@@ -36,36 +36,22 @@
   #obrazeka{
     width: 3vw;
     height: 3vw;
-    
-
-
   }
   #pismoramecku{
     color: white;
     font-family: Verdana;
     padding-left: 3vw;
-
-
-
   }
   #dolniramecek{
     background-color: #444;
     height: auto;
     width: 100%;
-
-
-
   }
 
   #obrazek2{
     width:100%;
     height: auto;
     opacity: 0.3;
-  
-
-
-
-
   }
   #Nadpis{
     top: 15vh;
@@ -75,50 +61,14 @@
     color:#555;
     font-family: Verdana;
     font-size: 280%;
-    
-
-
-
-
-
   }
   #remcekobrazku{
     max-height: 50vh;
-    
-
-
   }
   #obrazek1{
-   
-    
-   
-    
     width: 100%;
-    
-    
-    
-
-
-
-
-
   }
-   
-    
-
-
-
-
-
-
 </style>
-
-
-
-
-
-
-
 </head>
 
 <body style='margin-top:0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;'>
@@ -179,20 +129,65 @@
         </div>
         <div id=obrazek1>
             
-              <img src='picture1.jpg' id="obrazek2">
+              <img title="webkat" src='picture1.jpg' id="obrazek2">
               <h1 id='Nadpis'><u>Úvod</u></h1>
           
         </div>
+  
       <div id='dolniramecek'>
         <br>
         <p id='pismoramecku'>Kontakt: +420 111 111 111</p>
         <p id='pismoramecku'>E-mail: webkat@email.cz</p>
         <br>
-
-
+      </div> 
+      <div id="DeV">
+        Tato stránka, webkat.ga, momentálně slouží pouze k testování a některé funkce nemusí fungovat. Děkujeme za pochopení. <a href="/build" target="_blank">Více</a> <a class="CloseDeveloping">Ok</a>
       </div>
-                       
-      
-         
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $(".CloseDeveloping").click(function(){
+            $("#DeV").remove();
+            });
+        });
+      </script>  
+    <style>    
+
+    #DeV {
+        background-color: rgba(20,20,20,0.8);
+        min-height: 1.3vw;
+        font-size: 87.5%;
+        color: #ccc;
+        line-height: 2vw;
+        padding: 0.5vw 0 0.5vw 1.95vw;
+        font-family: "Trebuchet MS",Helvetica,sans-serif;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+    #DeV a {
+        color: #4B8EE7;
+        text-decoration: none;
+    }
+    #DeV:hover {
+        color: #FFF;
+    }
+    #DeV a.CloseDeveloping {
+        background-color: #F1D600;
+        color: #000;
+        display: inline-block;
+        border-radius: 1.0vh;
+        padding: 0 1.3vw;
+        cursor: pointer;
+        float: right;
+        margin: 0 3.9vw 0 0.65vw;
+    }
+    #DeV a.CloseDeveloping:hover {
+        background-color: #E0C91F;
+    }
+  
+    </style>     
 </body>
