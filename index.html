@@ -1,6 +1,8 @@
 <head>
-    <meta name="description" content="Naučte se jak programovat! S Webkat to jde snadno. | Webkat - Naučte se jak vytvářet moderní weby.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="Naučte se jak programovat! S Webkat to jde snadno. | Webkat - Naučte se jak vytvářet moderní weby.">
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script src="https://kit.fontawesome.com/d60d428278.js" crossorigin="anonymous"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154153507-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -10,9 +12,19 @@
     gtag('config', 'UA-154153507-2');
   </script>
 
-  <title>Web K&T</title>
+  <title>Web K&T | HTML a CSS návody</title>
   <link rel="shortcut icon" href="cat.ico" type="image/x-icon">
+
 <style>
+  #ptag{
+    max-width: 15vw;
+  }
+  #pismo001 {
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+  }
   #BUTTE45 {
     padding: 0.5vh;
     background-color: white;
@@ -55,19 +67,52 @@
     opacity: 0.3;
   }
   #Nadpis{
-    top: 15vh;
-    position:absolute;
-    left: 46%;
-    right: 55%;
-    color:#555;
-    font-family: Verdana;
+    top: 17vh;
+    right: auto;
+    color:black;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 280%;
+  }
+  #Nadpis2{
+    letter-spacing: 0.05vw;
+    font-size: 250%;
+    text-align: left;
+    color:#888;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
   }
   #remcekobrazku{
     max-height: 50vh;
   }
   #obrazek1{
-    width: 100%;
+    /*/width: auto;/*/
+    height: auto;
+    background-image: url('pokus.jpg');
+    background-color: #FFF;
+    opacity: 1;
+    overflow-x: visible;
+    background-repeat: no-repeat;
+    background-size: contain /*/contain cover/*/
+  }
+  #div01 {
+    border: 0.3vw solid #777;
+    border-radius: 2vw;
+    max-width: 21vw;
+    min-width: 21vw;
+    min-height: 40vh;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  .cls{
+   /*/ line-height: 20vh; /*/
+    display: inline-block;
+    margin-bottom: 2vw;
+    background-color: #fff;
+  }
+  .cls:hover{
+    background-color: whitesmoke;
+  }
+  li{
+    position: absolute;
   }
 </style>
 </head>
@@ -86,12 +131,12 @@
           margin:1vh;
           margin-bottom: 2.7vh;
         }
-        
+
         .dropdown {
           position: relative;
           display: inline-block;
         }
-        
+
         .dropdown-content {
           display: none;
           position: absolute;
@@ -100,7 +145,7 @@
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
           z-index: 1;
         }
-        
+
         .dropdown-content a {
           color: black;
           padding: 12px 16px;
@@ -109,15 +154,15 @@
           display: block;
           font-family:verdana;
         }
-        
+
         .dropdown-content a:hover {background-color: #777;}
-        
+
         .dropdown:hover .dropdown-content {display: block;}
-        
+
         .dropdown:hover .dropbtn {background-color: #666;}
         </style>
         <div id="menu" style='width:100%;background-color:#555;'>
-        
+
         <div class="dropdown"style='width:85vw;height:20px;'><h1 style='margin-left:2vw;color:white;font-family:verdana;'><img src='a.jpg' id='obrazeka'>&nbsp;Web K&T</h1></div>
         <div class="dropdown">
           <button class="dropbtn" style='font-family:verdana;font-weight:bold;'>Menu</button>
@@ -125,23 +170,58 @@
             <a style='color:white; font-family:verdana;'href="navody">Návody</a>
             <a style='color:white; font-family:verdana; border-top:0.5vh solid silver;'href="klavesovezkratky">Klávesové zkratky</a>
             <a style='color:white; font-family:verdana; border-top:0.5vh solid silver;'href="odkazy">Odkazy</a>
-        
+
           </div>
         </div>
         </div>
-        <div id=obrazek1>
-            
-              <img title="webkat" src='picture1.jpg' id="obrazek2">
-              <h1 id='Nadpis'><u>Úvod</u></h1>
-          
-        </div>
+        <center>
+          <div id='obrazek1'>
+
+            <br>
+              <!--<img title="webkat" src='picture1.jpg' id="obrazek2">-->
+              <h1 id='Nadpis'><u>Naučte se programovat s webkat!</u></h1><br>
+              <div style="width: 90vw;">
+                <!--<h1 id='Nadpis2' style="text-align: center;">Proč?</h1>-->
+                <br>
+                <div id="div01" style="margin-right: 28vw;" class="cls">
+                  <h2 style="font-weight: bold; color: #777;">Stačí Visual Studio <i class="fas fa-desktop" style="font-size:1em;color:#777;"></i></h2>
+                  <ul>                                          
+                    <li><p id="ptag">Na rozdíl od programovacích jazyků typu Python nebo C#, vám stačí jen webový prohlížeč, třeba Chrome a textový editor. Doporučujeme Visual Studio, jehož instalací vás provedeme hned v první kapitole.</p></li>
+                  </ul>
   
+                </div>
+                <div id="div01" style="margin-left: 18vw;" class="cls">
+                  <h2 style="font-weight: bold; color: #777;">S Webkat to dáte! <i class="fas fa-file-code" style="font-size:1em;color:#777;"></i></h2>
+                  <ul>
+                    <li><p id="ptag">Stačí si přečíst naše návody. Programování není věda, a naše návody tomu jen přispívají. Jsou psány pro úplné začátečníky, takže se nebojte!</p></li>
+                  </ul>
+                </div>  <br>
+                <div id="div01" style="margin-right: 28vw;" class="cls">
+                  <h2 style="font-weight: bold; color: #777;">Máte svobodu &nbsp;<i class="fas fa-edit" style="font-size:1em;color:#777;"></i></h2>
+                <ul>
+                  <li><p id="ptag">Můžete si navrhnou webové stránky jen a jen podle sebe, ne jako ve Webnode atd, kde máte zadarmo jen několik málo šablon.</p></li>
+                </ul>
+              </div>
+                <div id="div01" style="margin-left: 18vw;" class="cls">
+                  <h2 style="font-weight: bold; color: #777;">Zaujalo vás to? <i class="fas fa-lightbulb" style="font-size:1em;color:#777;"></i></h2>
+                  <ul>
+                    <li><p id="ptag" style="font-weight: 500;">Můžete hned začít! Vyberte si<a style='font-weight: bold;'>:</a> </p></li>
+                  </ul>
+                  <button onclick='location.href="navody"' style='position: absolute;background-color: steelblue;color:white;border-radius:2vh; border: 0px blue; margin-top: 10vh; width: 6vw;height: 5vh;'>Web</button>
+                  <button onclick='location.href="klavesovezkratky"'style='position: absolute;background-color: steelblue;color:white;border-radius:2vh; border: 0px blue; margin-top: 17vh; width: 6vw;height: 5vh;'>Klávesové zkratky</button>
+                </div>
+
+              </div>
+          </div>
+        </center>
+
+
       <div id='dolniramecek'>
         <br>
         <p id='pismoramecku'>Kontakt: +420 111 111 111</p>
         <p id='pismoramecku'>E-mail: webkat@email.cz</p>
         <br>
-      </div> 
+      </div>
       <div id="DeV">
         Tato stránka, webkat.ga, momentálně slouží pouze k testování a některé funkce nemusí fungovat. Děkujeme za pochopení. <a href="/build" target="_blank">Více</a> <a class="CloseDeveloping">Ok</a>
       </div>
@@ -153,8 +233,8 @@
             $("#DeV").remove();
             });
         });
-      </script>  
-    <style>    
+      </script>
+    <style>
 
     #DeV {
         background-color: rgba(20,20,20,0.8);
@@ -190,6 +270,6 @@
     #DeV a.CloseDeveloping:hover {
         background-color: #E0C91F;
     }
-  
-    </style>     
+
+    </style>
 </body>
